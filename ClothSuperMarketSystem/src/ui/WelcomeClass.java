@@ -56,5 +56,9 @@ public class WelcomeClass extends BaseClass {
                     println(getString("input.error"));  //输入非法 打印提示语句
             }
         }
+
+        HomeClass homeClass = new HomeClass();
+        homeClass.show();
+
     }
 }

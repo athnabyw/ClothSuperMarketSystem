@@ -3,6 +3,7 @@ package utils;
 import bean.Clothes;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.Xpp3Driver;
+import test.XMLtest;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -24,6 +25,10 @@ public class ProductsXMLUtils {
     public static List<Clothes> paraserProductFromXML(){
          List<Clothes> products = new ArrayList<>();
         XStream xStream = new XStream(new Xpp3Driver());
+        XStream.setupDefaultSecurity(xStream);    //设置默认xstream安全级 ，不然会有警告！
+        xStream.allowTypesByWildcard(new String[] {    //设置允许访问的类
+                "bean.Clothes"
+        });
         xStream.alias("list", products.getClass());
         xStream.alias("clothes", Clothes.class);
         xStream.useAttributeFor(Clothes.class, "id");
@@ -49,6 +54,10 @@ public class ProductsXMLUtils {
      **/
     public static void paraserProductsToXML(List<Clothes> products){
         XStream xStream = new XStream(new Xpp3Driver());
+        XStream.setupDefaultSecurity(xStream);   //设置默认xstream安全级 ，不然会有警告！
+        xStream.allowTypesByWildcard(new String[] {  //设置允许访问的类
+                        "bean.Clothes"
+                });
         xStream.alias("list", products.getClass());
         xStream.alias("clothes", Clothes.class);
         xStream.useAttributeFor(Clothes.class, "id");

@@ -1,5 +1,4 @@
 import ui.WelcomeClass;
-import utils.UserIO;
 
 /**
  * Description：程序的入口
@@ -8,6 +7,11 @@ import utils.UserIO;
  * Version: 0.0.1
  * Modified By:
  */
+/**
+ * @Description:  内置账号密码  athna 1234
+ * @Date 下午 9:22 2019/11/26
+ **/
+
 public class MainClass {
     public static void main(String[] args) {
 
