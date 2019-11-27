@@ -18,6 +18,42 @@ public class HomeClass extends BaseClass{
 
     public void show(){
         showProducts(); //打印有内容的列表
+        System.out.println("Welcome " + currUser.getUsername() + " !");
+        boolean flag = true;
+        while (flag){
+            System.out.println(getString("home.function"));
+            System.out.println(getString("info.select"));
+            String choice = input.nextLine();
+            switch (choice){
+                case "1":  //1、查询所有订单
+                    findList();
+                    flag = false;
+                    break;
+                case "2":  //2、查找订单
+                    findOrderById();
+                    flag = false;
+                    break;
+                case "3":  // 3、购买商品
+                    buyProducts();
+                    flag = false;
+                    break;
+                case "0":  // 0、退出
+                    flag = false;
+                    System.exit(0);
+                default:
+                    System.out.println(getString("input.error"));
+
+            }
+        }
+    }
+
+    private void buyProducts() {
+    }
+
+    private void findOrderById() {
+    }
+
+    private void findList() {
     }
 
     private void showProducts() {

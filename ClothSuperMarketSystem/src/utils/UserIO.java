@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class UserIO  {
     private static List<User> users = new ArrayList<>();  //储存user的集合
-    private static String USER_FILE = "src/res/user.obj";     //存放数据的文件的地址
+    private static String USER_FILE = "user.obj";     //存放数据的文件的地址
 
     //存用户数据到文件
     public boolean writeUsers()throws BussinessException{

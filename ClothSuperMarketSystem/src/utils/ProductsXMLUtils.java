@@ -36,7 +36,7 @@ public class ProductsXMLUtils {
         BufferedInputStream inputStream = null;
         try {
             inputStream = new BufferedInputStream(
-                    new FileInputStream("src/res/products.xml"));
+                    new FileInputStream("products.xml"));
             products = (List<Clothes>) xStream.fromXML(inputStream);
             inputStream.close();
         } catch (FileNotFoundException e) {
@@ -64,7 +64,7 @@ public class ProductsXMLUtils {
 
         try {
             BufferedOutputStream outputStream = new BufferedOutputStream(
-                    new FileOutputStream("src/res/products.xml"));
+                    new FileOutputStream("products.xml"));
             outputStream.write("<?xml version=\"1.0\" encoding=\"utf-8\" ?>".getBytes());
             //头句Xstream不会写，需要自己写
             xStream.toXML(products, outputStream);

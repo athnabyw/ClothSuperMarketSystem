@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public abstract class BaseClass {
     protected static Scanner input = new Scanner(System.in);
-    protected static User currUser; //当前用户对象
+    protected static User currUser; //当前用户对象（已登录），方便各种UI界面类获得用户对象
 
     //使用JavaBean从properties文件中提取数据
     private static ResourceBundle r = ResourceBundle.getBundle("res.r");
