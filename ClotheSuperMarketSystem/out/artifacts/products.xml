@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list>
+    <clothes id="A001">
+        <brand>VEROMODA</brand>
+        <style>连衣裙</style>
+        <color>白色</color>
+        <size>S</size>
+        <num>4</num>
+        <price>274.0</price>
+        <description>夏季五分袖连衣裙</description>
+    </clothes>
+    <clothes id="A002">
+        <brand>GERG</brand>
+        <style>连衣裙</style>
+        <color>黑色</color>
+        <size>S</size>
+        <num>19</num>
+        <price>164.0</price>
+        <description>系带无袖夏季连衣裙</description>
+    </clothes>
+    <clothes id="A003">
+        <brand>UIIDERG</brand>
+        <style>短裙</style>
+        <color>白色</color>
+        <size>S</size>
+        <num>22</num>
+        <price>122.0</price>
+        <description>蝶舞短裙</description>
+    </clothes>
+    <clothes id="A004">
+        <brand>IOUP</brand>
+        <style>衬衫</style>
+        <color>蓝色</color>
+        <size>M</size>
+        <num>10</num>
+        <price>89.0</price>
+        <description>夏天燃灰系列衬衫</description>
+    </clothes>
+    <clothes id="A005">
+        <brand>DFDSU</brand>
+        <style>短裤</style>
+        <color>黄色</color>
+        <size>S</size>
+        <num>55</num>
+        <price>34.0</price>
+        <description>守岁人系列短裤</description>
+    </clothes>
+</list>

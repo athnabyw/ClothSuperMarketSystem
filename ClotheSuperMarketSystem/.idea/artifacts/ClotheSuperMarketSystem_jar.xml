@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact name="ClothSuperMarketSystem:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/ClothSuperMarketSystem_jar</output-path>
+  <artifact name="ClotheSuperMarketSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClotheSuperMarketSystem_jar</output-path>
     <root id="root">
       <element id="archive" name="ClothSuperMarketSystem.jar">
         <element id="module-output" name="ClotheSuperMarketSystem" />
