@@ -10,9 +10,9 @@ import java.io.Serializable;
  * Modified By:
  */
 public class OrderItem implements Serializable {
-    private int itemId;
+    private int itemId; //序号
     private Clothes clothes; //商品
-    private int shoppingNum;
+    private int shoppingNum;  //数量
     private float sum;  //购买金额
 
     public OrderItem() {

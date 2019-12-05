@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description：订单类
+ * Description：订单类（大订单 总）
  * Author: 百里凌
  * Date: Created in 2019/11/21 下午 9:26
  * Version: 0.0.1
@@ -21,6 +21,13 @@ public class Order implements Serializable {
     private OrderStatusType status = OrderStatusType.UNPAID; //默认订单状态为未付款
     private int userId;
 
+    public List<OrderItem> getOrderItemList() {
+        return orderItemList;
+    }
+
+    public void setOrderItemList(List<OrderItem> orderItemList) {
+        this.orderItemList = orderItemList;
+    }
 
     public String getCreateDate() {
         return createDate;
@@ -52,5 +59,13 @@ public class Order implements Serializable {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 }

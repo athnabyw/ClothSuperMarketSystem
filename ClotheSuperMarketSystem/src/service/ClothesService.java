@@ -1,6 +1,7 @@
 package service;
 
 import bean.Clothes;
+import utils.BussinessException;
 
 import java.util.List;
 
@@ -15,4 +16,7 @@ public interface ClothesService {
     //以下是所有涉及Clothes（clothe的list） 的方法（功能）
 
     public List<Clothes> list();  //获得list（clothe的list）
+
+    //根据id查找一个（种）衣服
+    public Clothes findById(String cid) throws BussinessException;
 }

@@ -2,6 +2,7 @@ package service.impl;
 
 import bean.Clothes;
 import service.ClothesService;
+import utils.ClothesIO;
 import utils.ProductsXMLUtils;
 
 import java.util.List;
@@ -14,10 +15,17 @@ import java.util.List;
  * Modified By:
  */
 public class ClothesServiceImpl implements ClothesService {
-    //获得Clothes（list）
+
+    private ClothesIO clothesIO = new ClothesIO();
+    //获得所有Clothes （list）
     @Override
     public List<Clothes>  list() {
-        List<Clothes> clothes = ProductsXMLUtils.paraserProductFromXML();
-        return clothes;
+        return clothesIO.list();
+    }
+
+    //根据id查找一种衣服（Clothes）的信息
+    @Override
+    public Clothes findById(String cid) {
+        return clothesIO.findById(cid);
     }
 }
